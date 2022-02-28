@@ -1,0 +1,17 @@
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: navapp
+spec:
+  selector:
+    app: openrouteservice
+    env: dev
+  ports:
+  - name: directions
+    protocol: TCP
+    port: 8080
+    targetPort: 8080
+  clusterIP: 10.96.5.100
+  externalIPs:
+  - 172.16.10.100

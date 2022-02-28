@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: navapp-claim
+  labels:
+    app: openrouteservice
+    env: dev
+spec:
+  accessModes:
+    - Read
+  storageClassName: efs-csi
+  resources:
+    requests:
+      storage: 5Gi
