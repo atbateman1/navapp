@@ -26,11 +26,12 @@ Beyond MVP I would consider the following changes:
 
 The Kubernetes pod configuration in this repository refers to a public container registry. That registry holds the Openrouteservice container. This contains the API being accessed via NGINX.
 
+OSM files are accessed via EFS in AWS (This could be shifted to NFS if using on-prem network attached storage)
+
 The directions API takes coordinates and gives back directions. The testing example is below.
 
 Beyond MVP I would consider the following changes:
 * Build Openrouteservice locally and push it to a registry owned by the organization
-* Store OSM files in an S3 bucket (or NAS if on prem)
 * Employ a tool such as API Umbrella to handle authentication via the CRUD application https://api-umbrella.readthedocs.io/en/latest/
 
 ## Testing
