@@ -44,3 +44,7 @@ curl --include \
   'https://navapp.com/api/directions/driving-car?api_key=your-api-key&start=8.681495,49.41461&end=8.687872,49.420318'
   
 The CRUD application can be tested by accessing https://navapp.com/crud
+
+## Additional Notes
+
+There are things I like to do, especially in production environments, that aren't captured by this exercise. I am accustomed to building pipelines that will build, scan, test, and deploy. I can explain these in more detail upon request.
